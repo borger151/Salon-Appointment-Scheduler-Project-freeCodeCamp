@@ -150,3 +150,9 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 psql --username=freecodecamp --dbname=postgres
 ./salon.sh
 ./salon.sh
+pg_dump -cC --inserts -U freecodecamp salon > salon.sql
+git remote set-url origin https://github.com/borger151/Salon-Appointment-Scheduler-Project-freeCodeCamp.git
+git branch -M main
+git push -u origin main
+git checkout -b Salon-Appointment-Scheduler-Solution
+git add .
